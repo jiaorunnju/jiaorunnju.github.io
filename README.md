@@ -15,7 +15,7 @@ Syntax highlighted code block
 ## Header 2
 ### Header 3
 
-[external link](docs/index.md)
+[external link]("docs/index.md")
 
 - Bulleted
 - List
