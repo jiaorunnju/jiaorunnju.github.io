@@ -1,7 +1,7 @@
 ## Here is all my articles
 
 ### Algorithms
-[index]("docs/index")
+[index](docs/index)
 
 ### Programming
 
