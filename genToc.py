@@ -29,4 +29,7 @@ for d in dirs:
     
     toc.append(index)
 
-print(index_template.format(toc[0], toc[1], toc[2]))
+s = index_template.format(toc[0], toc[1], toc[2])
+
+f = open("index.md", 'w')
+f.write(s)

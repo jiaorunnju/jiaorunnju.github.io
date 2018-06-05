@@ -1,8 +1,15 @@
+
 ## Here is all my articles
 
 ### Algorithms
-[index](docs/index)
+[algo1](docs/Algorithms/algo1)
+
 
 ### Programming
+[prog1](docs/Programming/prog1)
 
-### Something else
+
+### Somethingelse
+[some1](docs/Somethingelse/some1)
+[some2](docs/Somethingelse/some2)
+
