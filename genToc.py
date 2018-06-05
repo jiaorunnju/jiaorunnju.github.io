@@ -25,7 +25,7 @@ for d in dirs:
     for i in files:
         if os.path.isfile(curpath+"\\"+i):
             filename = os.path.splitext(i)[0]
-            index += '[{0}](docs/{1}/{2})\n'.format(filename, d, filename)
+            index += '[{0}](docs/{1}/{2})\n\n'.format(filename, d, filename)
     
     toc.append(index)
 
