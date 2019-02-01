@@ -1,3 +1,4 @@
 theme: jekyll-theme-slate
 title: Welcome to my homepage!
 description: Just write something.
+markdown: kramdown
