@@ -71,11 +71,13 @@ We are interested in the following two quantities:
   This is also known as **excess risk**
 
 Because $L(\hat{h})$ is a random variable, so we can not bound that deterministically. However, we can give a high probability bound, e.g.
+
 $$
 \mathbb{P}[L(\hat{h})-L(h^*) \gt \epsilon] \leq \delta
 $$
 
 In fact, this is the general framework we use in analyzing statistical learning algorithms. Now we introduce the **Probably Approximately Correct(PAC)** framework (*Leslie Valient, 1984*).
+
 >A learning algorithm $A$ PAC learns $H$ if for any distribution $p$ over $X\times Y$, $\epsilon > 0$, $\delta > 0$, $A$ returns $\hat{h}$ such that with probability at least $1-\delta$, $L(\hat{h})-L(h^{\*})\leq \epsilon$, and $A$ runs in $poly(n, size(x),\frac{1}{\epsilon}, \frac{1}{\delta})$ time.
 
 Note that we do not consider the optimization here, in other words, we assume that the loss can be optimized efficently, e.g. convex optimization problems.
@@ -84,27 +86,33 @@ Note that we do not consider the optimization here, in other words, we assume th
 At the end of this post, we give a simple example of analyze the excess risk. There are two assumptions here:
 - $H$ is finite
 - there is a $h^{\*}\in H$ with 0 expected risk (this is what the word **realizable** in title means),
+  
   $$
   L(h^*)=E_{(x,y)\sim p^*}[l((x,y),h^*)]=0
   $$
 
 Let $l$ be zero-one loss, and $\hat{h}$ be the empirical risk minimizer. Given n training examples, then with probability $1-\delta$,
+
 $$
 L(\hat{h}) \leq \frac{\log{|H|}+\log{\frac{1}{\delta}}}{n}
 $$
 
 *proof :* what we want to do is to bound the probability of getting a bad(which means perform badly on whole dataset) $\hat{h}$, because we use ERM, so $\hat{h}$ is perfect on training set, which means
+
 $$
 \hat{L}(\hat{h})=0
 $$
+
 Let the set of all bad hypothesis is $B$
 
 - Step 1
   
   For any bad $h$ with $L(h)>\epsilon$, the probability that $h$ is perfect on training set satisfies:
+
   $$
   \mathbb{P}[\hat{L}(h)=0]=(1-L(h))^n \leq (1-\epsilon)^n \leq e^{-\epsilon n}
   $$
+
   where the last step uses $1+x\leq e^x$
 
 - Step 2
@@ -113,17 +121,23 @@ Let the set of all bad hypothesis is $B$
   >Union bound: $P(A\cup B)\leq P(A)+P(B)$
 
   Let $h'$ be the hypothesis we get after learning, then
+
   $$
   \mathbb{P}[\hat{L}(h')=0] \leq \mathbb{P}[\exists h\in B, \hat{L}(h)=0] \leq \sum_{h\in B} \mathbb{P}[\hat{L}(h)=0]
   $$
+
   The last term satisfies:
+
   $$
   \sum_{h\in B} \mathbb{P}[\hat{L}(h)=0] \leq |B|e^{-\epsilon n} \leq |H|e^{-\epsilon n}
   $$
+
   let the last term be $\delta$, we have:
+
   $$
   \epsilon = \frac{\log{|H|}+\log{\frac{1}{\delta}}}{n}
   $$
+  
   which completes the proof.
 
 In this post, we give a simple introduction of statistical learning theory, mainly focused on $PAC$ learning. This is useful. Take the last equation as an example, we can get the following tips:
