@@ -42,7 +42,7 @@ Several definitions below:
   \hat{h}=\arg min_{h\in H} \hat{L}(h)
   $$
 
-We want to get $h^*$, but $L(h)$ is difficult to solve because we do not know the distribution $p^*$. By ERM, our interest is the expected risk of $\hat{h}$, in other words, $L(\hat{h})$. 
+We want to get $h^{*}$, but $L(h)$ is difficult to solve because we do not know the distribution $p^*$. By ERM, our interest is the expected risk of $\hat{h}$, in other words, $L(\hat{h})$. 
 
 We are interested in two quantities below:
 - How does the expected and empirical risks compare for the ERM?
