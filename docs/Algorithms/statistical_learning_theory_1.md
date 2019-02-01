@@ -20,16 +20,16 @@ Several definitions below:
 - Expected risk
   
   $$
-  L(h)=E_{(x,y)\sim p*}[l((x,y),h)]
+  L(h)=E_{(x,y)\sim p^{\*}}[l((x,y),h)]
   $$
 
-  The expected risk is just an expectation of $h's$ loss with respect to $l$ over distribution $p^*$. Our goal is to get the best $h^*$ which satisfies:
+  The expected risk is just an expectation of $h's$ loss with respect to $l$ over distribution $p^{\*}$. Our goal is to get the best $h^{\*}$ which satisfies:
 
   $$
   h^*=\arg min_{h\in H}L(h)
   $$
 
-  Note that $h^*$ is not a random variable.
+  Note that $h^{\*}$ is not a random variable.
 - Training example
   Training examples are a set of input-output pairs:
 
@@ -37,7 +37,7 @@ Several definitions below:
   (x^{(1)},y^{(1)}),(x^{(2)},y^{(2)}),...,(x^{(n)},y^{(n)})
   $$
 
-  which are drawn i.i.d from $p^*$. Note that the training distribution and testing distribution are the same, and this is the source of statistial learning's power.
+  which are drawn i.i.d from $p^{\*}$. Note that the training distribution and testing distribution are the same, and this is the source of statistial learning's power.
 - Empirical risk
   Empirical risk
 
@@ -51,7 +51,7 @@ Several definitions below:
   \hat{h}=\arg min_{h\in H} \hat{L}(h)
   $$
 
-We want to get $h^*$, but $L(h)$ is difficult to solve because we do not know the distribution $p^*$. By ERM, our interest is the expected risk of $\hat{h}$, in other words, $L(\hat{h})$. 
+We want to get $h^{\*}$, but $L(h)$ is difficult to solve because we do not know the distribution $p^{\*}$. By ERM, our interest is the expected risk of $\hat{h}$, in other words, $L(\hat{h})$. 
 
 We are interested in two quantities below:
 - How does the expected and empirical risks compare for the ERM?
@@ -60,10 +60,10 @@ We are interested in two quantities below:
   L(\hat{h})-\hat{L}(\hat{h})
   $$
 
-- How will the ERM doing with respect to $h^*$?
+- How will the ERM doing with respect to $h^{\*}$?
   
   $$
-  L(\hat{h})-L(h^*)
+  L(\hat{h})-L(h^{\*})
   $$
-  
+
   This is also known as **excess risk**
