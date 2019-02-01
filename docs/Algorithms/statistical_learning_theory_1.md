@@ -20,7 +20,7 @@ Several definitions below:
 - Expected risk
   
   $$
-  L(h)=E_{(x,y)\sim p^{\*}}[l((x,y),h)]
+  L(h)=E_{(x,y)\sim p^*}[l((x,y),h)]
   $$
 
   The expected risk is just an expectation of $h's$ loss with respect to $l$ over distribution $p^{\*}$. Our goal is to get the best $h^{\*}$ which satisfies:
@@ -63,7 +63,7 @@ We are interested in two quantities below:
 - How will the ERM doing with respect to $h^{\*}$?
   
   $$
-  L(\hat{h})-L(h^{\*})
+  L(\hat{h})-L(h^*)
   $$
 
   This is also known as **excess risk**
