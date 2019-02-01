@@ -1,9 +1,10 @@
 # Statistical Learning Theory - 1
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
 In this blog, we mainly talk about statistical learning theory, which describes how a learning algorithm generalize and how to derive a generalization error bound for an algorithm. This is important because it shows why statistical learning is useful under i.i.d assumption.
 
 ## Introduction
 The central question in statistical learning is:
-> Why does minimization training error reduce test error?
+> Why does minimizing training error reduce test error?
 
 The answer is not obvious for the training error and testing error are two separate quantities which can in general be arbitrarily far apart. To answer this question, we will use a set of new tools. At the heart of these tools are concentration inequalities and union bound. We will talk about these tools below.
 
