@@ -1,5 +1,4 @@
 # Statistical Learning Theory - 1
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
 In this blog, we mainly talk about statistical learning theory, which describes how a learning algorithm generalize and how to derive a generalization error bound for an algorithm. This is important because it shows why statistical learning is useful under i.i.d assumption.
 
 ## Introduction
