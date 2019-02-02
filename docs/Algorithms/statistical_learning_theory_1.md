@@ -9,7 +9,7 @@ The central question in statistical learning is:
 
 The answer is not obvious for the training error and testing error are two separate quantities which can in general be arbitrarily far apart. To answer this question, we will use a set of new tools. At the heart of these tools are concentration inequalities and union bound. We will talk about these tools below.
 
-## Formal setup
+## Formal Setup
 In this post, we mainly talk about supervised learning setting. The problem is predicting an output $y\in Y$ given $x\in X$, for example, $X=R^d,Y=\{-1,1\}$.
 
 - Let $H$ be a set of hypotheses, each $h\in H$ maps $X$ to $Y$, for example, $H=\{ x\to sign(w^Tx), w\in R^d \}$.
@@ -82,7 +82,7 @@ In fact, this is the general framework we use in analyzing statistical learning 
 
 Note that we do not consider the optimization here, in other words, we assume that the loss can be optimized efficently, e.g. convex optimization problems.
 
-## Realizable finite hypothesis class
+## Realizable Finite Hypothesis Class
 At the end of this post, we give a simple example of analyze the excess risk. There are two assumptions here:
 - $H$ is finite
 - there is a $h^{\*}\in H$ with 0 expected risk (this is what the word **realizable** in title means),
@@ -137,9 +137,10 @@ Let the set of all bad hypothesis is $B$
   $$
   \epsilon = \frac{\log{|H|}+\log{\frac{1}{\delta}}}{n}
   $$
-  
+
   which completes the proof.
 
+## Conclusion
 In this post, we give a simple introduction of statistical learning theory, mainly focused on $PAC$ learning. This is useful. Take the last equation as an example, we can get the following tips:
 - If we want to get better performance, e.g., let $\epsilon$ be smaller, we can either increase $n$ or restrict $H$. 
 - More complex $H$ needs more data! This is why data is more important in the days of deep learning.
