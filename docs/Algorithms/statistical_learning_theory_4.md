@@ -136,3 +136,40 @@ E[G_n]\leq 2E[\sup_{h\in H}\frac{1}{n}\sum_{i=1}^n \sigma_i l(Z_i,h)]
 $$
 
 The right-hand-side is almost the Rademacher complexity.
+
+## Formal Definition
+
+Let $F$ be a set of real-valued functions, define the Rademacher complexity of $F$:
+
+$$
+R_n(F)=E[\sup_{h\in H}\frac{1}{n}\sum_{i=1}^n \sigma_i f(Z_i)]
+$$
+
+where $Z_i$ are i.i.d samples and $\sigma_i$ are Rademacher variables.
+
+The Rademacher complexity captures how well the best function in $F$ can fit random labels. A more power $F$ can fit better.
+
+Define the empirical Rademacher complexity as:
+
+$$
+\hat{R_n}(F)=E[\sup_{h\in H}\frac{1}{n}\sum_{i=1}^n \sigma_i f(Z_i)|Z_{1:n}]
+$$
+
+Note that $R_n(F)=E[\hat{R_n}(F)]$
+
+Now we can bound the excess risk: with probability at least $1-\delta$:
+
+$$
+L(\hat{h})-L(h^*)\leq 4R_n(F)+\sqrt{\frac{2\log(2/\delta))}{n}}
+$$
+
+where $F$ is the loss class, e.g., zero-one loss. The proof is straight forward, just bound $E[G_n]$ with $R_n(F)$.
+
+## Some Properties
+
+- $R_n(\\{f\\})=0$
+- $R_n(F_1)\leq R_n(F_2)$ if $F_1 \subseteq F_2$
+- $R_n(F_1+F_2)=R_n(F_1)+R_n(F_2)$
+- $R_n(c\cdot F)=\|c\|R_n(F)$
+- $R_n(\phi \circ F)\leq c_{\phi}R_n(F)$, $c_{\phi}$ is the Lipschitz constant of $\phi$
+- $R_n(convex_hull(F))=R_n(F)$ for finite $F$
