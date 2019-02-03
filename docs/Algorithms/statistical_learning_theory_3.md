@@ -31,13 +31,13 @@ The proof is complex. We will first introduce martingale, then use it to prove t
 (discrete-time) Martingale is a sequence of random variables $X_1,...,X_n,...$ that satisfies for any $n$:
 
 - $E[X_n] < \infty$
-- $E[X_{n+1}|X_1,...,X_n]=X_n$
+- $E[X_{n+1}\|X_1,...,X_n]=X_n$
 
 which says that given all prior states, the expectation of next state is similar to the most recent state (can not predict future).
 
-More generally, a sequence of random variables $Z_0,Z_1,...,Z_n$ is a martingale sequence with respect to another sequence of random variables $X_1,...,X_n$ iff $Z_i$ is a function of $X_{1:i}$, $E[|Z_i|]<\infty$, and $E[Z_i|X_{1:i-1}]=Z_{i-1}$
+More generally, a sequence of random variables $Z_0,Z_1,...,Z_n$ is a martingale sequence with respect to another sequence of random variables $X_1,...,X_n$ iff $Z_i$ is a function of $X_{1:i}$, $E[\|Z_i\|]<\infty$, and $E[Z_i\|X_{1:i-1}]=Z_{i-1}$
 
-Define $D_i=Z_i-Z_{i-1}$, we call $D_{1:n}$ a martingale difference sequence with respect to $X_{1:n}$, another way to write is $E[D_i|X_{1:i-1}]=0$. We can view the sequence of $D_i$ as a generalization of independent variables. An example of martingale is random walk with the same probability and step-size on all directions.
+Define $D_i=Z_i-Z_{i-1}$, we call $D_{1:n}$ a martingale difference sequence with respect to $X_{1:n}$, another way to write is $E[D_i\|X_{1:i-1}]=0$. We can view the sequence of $D_i$ as a generalization of independent variables. An example of martingale is random walk with the same probability and step-size on all directions.
 
 Note that here we do not need $X_{1:n}$ to be i.i.d.
 
