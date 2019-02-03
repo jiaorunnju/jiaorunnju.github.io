@@ -1,9 +1,11 @@
 # Statistical Learning Theory - 2
+
 >This series of blogs are based on statistical learning notes of [CS229T](https://github.com/percyliang/cs229t)
 
 In this blog, we will continue topics on concentration inequalities.
 
 ## McDiarmid's Inequality
+
 McDiarmid's inequality is a generalization of Hoeffding's inequality, where we want to bound not the average of random variable $X_1,...,X_n$, but any function on $X_1,...,X_n$ satisfying an appropriate bounded differences condition.
 
 Let $f$ be a function satisfying the following bounded differences condition:
@@ -21,10 +23,13 @@ $$
 If we make $f(x_1,...,x_n)=\frac{1}{n}\sum_{i=1}^n x_i$, and $a_i\leq x_i \leq b_i$, then we get the Hoeffding's inequality. Note that $f$ can be rather complex here, as long as it satisfies the bounded differences condition.
 
 ## Proof of McDiarmid's Inequality
+
 The proof is complex. We will first introduce martingale, then use it to prove the inequality.
 
-#### Martingale
+### Martingale
+
 (discrete-time) Martingale is a sequence of random variables $X_1,...,X_n,...$ that satisfies for any $n$:
+
 - $E[X_n] < \infty$
 - $E[X_{n+1}|X_1,...,X_n]=X_n$
 
@@ -36,7 +41,8 @@ Define $D_i=Z_i-Z_{i-1}$, we call $D_{1:n}$ a martingale difference sequence wit
 
 Note that here we do not need $X_{1:n}$ to be i.i.d.
 
-#### Sub-Gaussian Martingale
+### Sub-Gaussian Martingale
+
 Let $Z_0,Z_1,...,Z_n$ be a martingale sequence with respect to $X_1,...,X_n$, and Suppose that each $D_i=Z_i-Z_{i-1}$ is conditionally sub-gaussian with parameter $\sigma^2$, that is
 
 $$
@@ -59,7 +65,8 @@ $$
 
 Follow this, and we can complete the proof. The key is that given $X_{1:n-1}$, $D_i$ is sub-gaussian.
 
-#### Proof
+### Proof
+
 We construct a particular type of martingale called **Doob martingale**:
 
 $$
