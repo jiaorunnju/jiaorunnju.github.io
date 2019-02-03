@@ -172,4 +172,4 @@ where $F$ is the loss class, e.g., zero-one loss. The proof is straight forward,
 - $R_n(F_1+F_2)=R_n(F_1)+R_n(F_2)$
 - $R_n(c\cdot F)=\|c\|R_n(F)$
 - $R_n(\phi \circ F)\leq c_{\phi}R_n(F)$, $c_{\phi}$ is the Lipschitz constant of $\phi$
-- $R_n(convex\_hull(F))=R_n(F)$ for finite $F$
+- $R_n(ConvexHull(F))=R_n(F)$ for finite $F$
