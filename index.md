@@ -10,6 +10,8 @@
 
 [statistical_learning_theory_4](docs/Algorithms/statistical_learning_theory_4)
 
+[statistical_learning_theory_5](docs/Algorithms/statistical_learning_theory_5)
+
 
 
 ### Programming
