@@ -69,7 +69,7 @@ Here are some properties of MGF(easy to prove):
 Applying the above properties to sample means, for all $t>0$, we get:
 
 $$
-\mathbb{P}[\hat{\mu} \geq \epsilon]\leq (\frac{M_{X1}(t)}{e^{t\epsilon}})^n
+\mathbb{P}[\hat{\mu} \geq \epsilon]\leq (\frac{M_{X_1}(t)}{e^{t\epsilon}})^n
 $$
 
 So, for suitable t ($\frac{M_{X1}(t)}{e^{t\epsilon}} < 1$), the tail probability decays exponentially. Note that the mean of variable $X$ here needs to be 0 to ensure a suitable $t$ exists.
