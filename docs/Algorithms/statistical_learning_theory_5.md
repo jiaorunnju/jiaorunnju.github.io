@@ -85,6 +85,13 @@ $$
 when $n \leq d$: it's $2^n$;
 when $n>d$: it's ${(\frac{en}{d})^d}$
 
+*Sketch of proof*: use mathematical induction. When $n>d$ ($n\leq d$ is easy), for $n+1$ examples, we consider the label for the $(n+1)th$ sample. 
+
+- if $(n+1)th$ sample takes just one label, then the maximum number of labels is $s(H, n)$.
+- if $(n+1)th$ sample takes two labels, the maximum number of assignments to labels is $2*s(H,n)$. However, half of them have appeared in condition 1, so remove them.
+
+Overall, we can complete the induction.
+
 Plug this into the result before, we get:
 
 $$
