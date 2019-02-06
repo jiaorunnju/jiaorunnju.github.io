@@ -27,7 +27,7 @@ We omit the proof here. This lemma gives an upper bound on the Rademacher comple
 Combine the lemma above and the result in last post, we can get:
 
 $$
-L(\hat{h})-L(h^*)\leq \sqrt{\frac{32\log |H|}{n}} + \sqrt{\frac{2\log(2/\delta)}{n}}=O(\sqrt{\frac{\log(|H|)}{n}})
+L(\hat{h})-L(h^*)\leq \sqrt{\frac{32\log |H|}{n}} + \sqrt{\frac{2\log(2/\delta)}{n}}=O\left(\sqrt{\frac{\log(|H|)}{n}}\right)
 $$
 
 Since the empirical Rademacher complexity is bounded, then its expectation is bounded. We can get a result of the same order as before.

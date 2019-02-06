@@ -38,7 +38,7 @@ Different from that in post 1, here wo do not assume a perfect $h\in H$ exists.
 Let $H$ be the finite hypothesis class, and $l$ be the zero-one loss. $\hat{h}$ is the empirical risk minimizer.Then with probability at least $1-\delta$:
 
 $$
-L(\hat{h})-L(h^*)\leq \sqrt{\frac{2(\log(|H|)+\log(2/\delta))}{n}}=O(\sqrt{\frac{\log(|H|)}{n}})
+L(\hat{h})-L(h^*)\leq \sqrt{\frac{2(\log(|H|)+\log(2/\delta))}{n}}=O\left(\sqrt{\frac{\log(|H|)}{n}}\right)
 $$
 
 *proof*: we prove this by control
@@ -56,7 +56,7 @@ $$
 Since $H$ is finite, then we just use union bound:
 
 $$
-\mathbb{P}[\sup_{h\in H} |L(h)-\hat{L}(h)|\geq \frac{\epsilon}{2}]\leq |H|\cdot 2\exp(-2n(\frac{\epsilon}{2})^2)=\delta
+\mathbb{P}[\sup_{h\in H} |L(h)-\hat{L}(h)|\geq \frac{\epsilon}{2}]\leq |H|\cdot 2\exp\left(-2n\left(\frac{\epsilon}{2}\right)^2\right)=\delta
 $$
 
 We can complete the proof.

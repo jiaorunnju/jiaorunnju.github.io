@@ -17,7 +17,7 @@ $$
 for all $i$ and $x_i$ (modifying one coordinate does not change $f$ too much). And let $X_1,...,X_n$ be independent random variables.Then we have:
 
 $$
-\mathbb{P}[f(X_1,...,X_n) \geq E[f(X_1,...,X_n)]+\epsilon] \leq \exp(\frac{-2\epsilon^2}{\sum_{i=1}^n c_i^2})
+\mathbb{P}[f(X_1,...,X_n) \geq E[f(X_1,...,X_n)]+\epsilon] \leq \exp\left(\frac{-2\epsilon^2}{\sum_{i=1}^n c_i^2}\right)
 $$
 
 If we make $f(x_1,...,x_n)=\frac{1}{n}\sum_{i=1}^n x_i$, and $a_i\leq x_i \leq b_i$, then we get the Hoeffding's inequality. Note that $f$ can be rather complex here, as long as it satisfies the bounded differences condition.

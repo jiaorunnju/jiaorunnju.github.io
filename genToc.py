@@ -1,7 +1,7 @@
 import os
 
 index_template = '''
-## Here is all my articles
+## Here are all my articles
 
 ### Algorithms
 {0}
