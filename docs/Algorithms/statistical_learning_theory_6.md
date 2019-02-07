@@ -41,13 +41,13 @@ $$
 Distribute the sum, the **expectation of cross is zero** since $\sigma_i$ is independent.
 
 $$
-= \leq \frac{B_2}{n} \sqrt{ E\left[ \sum_{i=1}^n \|\sigma_i Z_i\|_2^2 \right]}
+= \frac{B_2}{n} \sqrt{ E\left[ \sum_{i=1}^n \|\sigma_i Z_i\|_2^2 \right]}
 $$
 
 since $\sigma_i=1$ or $-1$, we have:
 
 $$
-= \leq \frac{B_2}{n} \sqrt{ E\left[ \sum_{i=1}^n \| Z_i\|_2^2 \right]}
+= \frac{B_2}{n} \sqrt{ E\left[ \sum_{i=1}^n \| Z_i\|_2^2 \right]}
 $$
 
 Then with the bound on $Z_i$, we get:
