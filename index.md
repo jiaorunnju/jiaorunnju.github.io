@@ -1,5 +1,5 @@
 
-## Here is all my articles
+## Here are all my articles
 
 ### Algorithms
 [statistical_learning_theory_1](docs/Algorithms/statistical_learning_theory_1)
@@ -11,6 +11,8 @@
 [statistical_learning_theory_4](docs/Algorithms/statistical_learning_theory_4)
 
 [statistical_learning_theory_5](docs/Algorithms/statistical_learning_theory_5)
+
+[statistical_learning_theory_6](docs/Algorithms/statistical_learning_theory_6)
 
 
 
