@@ -18,6 +18,8 @@
 
 [statistical_learning_theory_8](docs/Algorithms/statistical_learning_theory_8)
 
+[statistical_learning_theory_9](docs/Algorithms/statistical_learning_theory_9)
+
 
 
 ### Programming
