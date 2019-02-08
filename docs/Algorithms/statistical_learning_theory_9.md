@@ -1,4 +1,4 @@
-# Statistical Learning Theory - 8
+# Statistical Learning Theory - 9
 
 >This series of blogs are based on statistical learning notes of [CS229T](https://github.com/percyliang/cs229t)
 
