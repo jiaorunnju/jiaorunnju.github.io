@@ -16,6 +16,8 @@
 
 [statistical_learning_theory_7](docs/Algorithms/statistical_learning_theory_7)
 
+[statistical_learning_theory_8](docs/Algorithms/statistical_learning_theory_8)
+
 
 
 ### Programming
